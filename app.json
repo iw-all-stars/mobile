@@ -1,40 +1,47 @@
 {
   "expo": {
-    "name": "mobileV2",
-    "slug": "mobileV2",
+    "name": "challenge2",
+    "slug": "challenge2",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/app-logo.png",
+    "scheme": "esgi-pa2",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/app-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.acme.challenge2",
+      "supportsTablet": false,
+      "config": {
+        "googleMapsApiKey": "AIzaSyAuWKSKCJOX7T9yhC_jgz8vypAslwBJkSg"
+      }
     },
     "android": {
+      "package": "com.acme.challenge2",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/app-logo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/app-logo.png"
     },
-    "plugins": [
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e95b9e11-d515-4965-a1e0-2ccafc555a25"
+      }
+    },
+    "owner": "omaziarz"
   }
 }
