@@ -32,7 +32,16 @@
       "output": "static",
       "favicon": "./assets/app-logo.png"
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-auth0",
+        {
+          "domain": "omaziarz.eu.auth0.com",
+          "customScheme": "esgi-pa2"
+        }
+      ]
+    ],
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
